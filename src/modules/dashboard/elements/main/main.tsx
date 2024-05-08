@@ -84,7 +84,7 @@ const Main = () => {
           <div className="w-full bg-white border rounded p-5 my-3">
             <h5 className="font-medium">Tutorials</h5>
             <p className="text-sm opacity-[.7]">
-              Learn how to get started on becodemy and utilize all our features,
+              Learn how to get started on MailMagnify and utilize all our features,
               directly from the becodemy team.
             </p>
             <br />

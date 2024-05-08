@@ -12,6 +12,7 @@ export const addStripe = async () => {
     const user = await currentUser();
 
     const membership = await Membership.findOne({ userId: user?.id! });
+    // console.log(membership)
 
     if (membership) {
       return;
@@ -26,12 +27,14 @@ export const addStripe = async () => {
           name: user?.firstName! + user?.lastName,
         })
         .then(async (customer) => {
-          await Membership.create({
+           await Membership.create({
             userId: user?.id,
             stripeCustomerId: customer.id,
-            plan: "LAUNCH",
+            plan: "Grow",
           });
         });
+
+        // return membership;
     }
   } catch (error) {
     console.log(error);

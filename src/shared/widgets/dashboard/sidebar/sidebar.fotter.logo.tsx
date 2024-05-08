@@ -44,8 +44,8 @@ const SidebarFotterLogo = () => {
           </g>
         </g>
       </svg>
-      <h5 className="absolute right-7 pt-1 opacity-[.8] font-medium text-lg">
-        Becodemy
+      <h5 className=" absolute right-7 pt-1 opacity-[.8] font-medium text-lg ">
+        MailMagnify
       </h5>
     </div>
   );

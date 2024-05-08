@@ -32,16 +32,14 @@ const DashboardItems = ({ bottomContent }: { bottomContent?: boolean }) => {
               className="p-2 py-5 flex items-center"
             >
               <span
-                className={`text-3xl mr-2 ${
-                  item.url === activeRoute && "text-[#463bbd]"
-                }`}
+                className={`text-3xl mr-2 ${item.url === activeRoute && "text-[#463bbd]"
+                  }`}
               >
                 {item.icon}
               </span>
               <span
-                className={`text-xl mr-2 ${
-                  item.url === activeRoute && "text-[#463bbd]"
-                }`}
+                className={`text-xl mr-2 ${item.url === activeRoute && "text-[#463bbd]"
+                  }`}
               >
                 {item.title}
               </span>
@@ -62,16 +60,14 @@ const DashboardItems = ({ bottomContent }: { bottomContent?: boolean }) => {
                 }
               >
                 <span
-                  className={`text-3xl mr-2 ${
-                    item.url === activeRoute && "text-[#463bbd]"
-                  }`}
+                  className={`text-3xl mr-2 ${item.url === activeRoute && "text-[#463bbd]"
+                    }`}
                 >
                   {item.icon}
                 </span>
                 <span
-                  className={`text-xl mr-2 ${
-                    item.url === activeRoute && "text-[#463bbd]"
-                  }`}
+                  className={`text-xl mr-2 ${item.url === activeRoute && "text-[#463bbd]"
+                    }`}
                 >
                   {item.title}
                 </span>
@@ -80,7 +76,7 @@ const DashboardItems = ({ bottomContent }: { bottomContent?: boolean }) => {
           )}
           {/* sign out */}
           <div className="p-2 py-5 flex items-center cursor-pointer border-b"
-          onClick={LogoutHandler}
+            onClick={LogoutHandler}
           >
             <span className="text-3xl mr-2">{ICONS.logOut}</span>
             <span className="text-xl">Sign Out</span>
@@ -92,7 +88,7 @@ const DashboardItems = ({ bottomContent }: { bottomContent?: boolean }) => {
             <SidebarFotterLogo />
           </div>
           <p className="text-sm text-center pt-5 pb-10">
-            © 2024 Becodemy, Inc. All rights reserved.
+            © 2024 MailMagnify, Inc. All rights reserved.
           </p>
         </>
       )}

@@ -12,6 +12,7 @@ const PricingCard = ({ active }: { active: string }) => {
     await stripeSubscribe({ price: price, userId: user?.id! }).then(
       (res: any) => {
         history.push(res);
+        // console.log(res)
       }
     );
   };
@@ -105,8 +106,8 @@ const PricingCard = ({ active }: { active: string }) => {
             handleSubscription({
               price:
                 active === "Monthly"
-                  ? "price_1OnaWFSA1WAzNgKlsGN6K4ZW"
-                  : "price_1Onbt8SA1WAzNgKlyrXYlJBG",
+                  ? "price_1OuXR1SEe3aLFy00EJXJH5Hs"
+                  : "price_1OuXg5SEe3aLFy00nt7cH8Uc",
             })
           }
         >
@@ -161,8 +162,8 @@ const PricingCard = ({ active }: { active: string }) => {
             handleSubscription({
               price:
                 active === "Monthly"
-                  ? "price_1On2H2SA1WAzNgKlV64Zj6gE"
-                  : "price_1Onf9gSA1WAzNgKlg8NLBP4r",
+                  ? "price_1Ox2sGSEe3aLFy00O2EaISO7"
+                  : "price_1OuXtQSEe3aLFy00mDMzhA0h",
             })
           }
         >
